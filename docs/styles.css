@@ -2,13 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #141414; /* Darkish background color */
+    color: #fff; /* Light text color */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: #242424; /* Slightly lighter background for header */
+    padding: 10px 0;
     text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
@@ -16,36 +32,20 @@ main {
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-form {
-    display: grid;
-    gap: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 8px 16px;
-    background-color: #007bff;
+section h2 {
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.payhip-embed-page {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
