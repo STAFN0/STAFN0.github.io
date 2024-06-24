@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototype Website</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Prototype Website</h1>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
     <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is a prototype website.</p>
+        <section id="store">
+            <h2>Store Section</h2>
+            <div class="payhip-embed-page" data-key="6FCZ2">...</div>
+            <script type="text/javascript" src="https://payhip.com/embed-page.js?v=24u68984"></script>
         </section>
-        
-        <section>
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+
+        <section id="info">
+            <h2>Info</h2>
+            <p>This is a fake info section about someone called STAFN0.</p>
+            <p>Contact me on Discord: <a href="https://discord.gg/your-invite-link">Join Discord</a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your-email@example.com</p>
+            <p>Discord: @Xpu.</p>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
