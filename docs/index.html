@@ -1,67 +1,294 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruthx Studios</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/guHIaS2uDnu
+-->
+
+<div class="flex flex-col min-h-[100dvh]">
+  <header class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
+    <a class="flex items-center gap-2" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="w-6 h-6"
+      >
+        <line x1="6" x2="10" y1="12" y2="12"></line>
+        <line x1="8" x2="8" y1="10" y2="14"></line>
+        <line x1="15" x2="15.01" y1="13" y2="13"></line>
+        <line x1="18" x2="18.01" y1="11" y2="11"></line>
+        <rect width="20" height="12" x="2" y="6" rx="2"></rect>
+      </svg>
+      <span class="text-xl font-bold">Ruthx Studios</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Home
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Portfolio
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        About
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Contact
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Store
+      </a>
+    </nav>
+    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="w-6 h-6"
+      >
+        <line x1="4" x2="20" y1="12" y2="12"></line>
+        <line x1="4" x2="20" y1="6" y2="6"></line>
+        <line x1="4" x2="20" y1="18" y2="18"></line>
+      </svg>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+  </header>
+  <main class="flex-1">
+    <section class="bg-primary py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+          <div class="space-y-4">
+            <h1 class="text-4xl font-bold tracking-tighter text-primary-foreground sm:text-5xl xl:text-6xl">
+              Unleash Your Roblox Potential with Ruthx Studios
+            </h1>
+            <p class="text-primary-foreground/80 md:text-xl">
+              Ruthx Studios is a leading Roblox development studio, crafting immersive and engaging games that
+              captivate players of all ages.
+            </p>
+            <div class="flex flex-col gap-2 min-[400px]:flex-row">
+              <a
+                class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                View Portfolio
+              </a>
+              <a
+                class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                Contact Us
+              </a>
+              <a
+                class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                href="#"
+              >
+                Store
+              </a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="#" data-page="store">Store</a>
-                    <a href="#" data-page="contact">Contact</a>
-                    <a href="#" data-page="info">Info</a>
-                </div>
+          </div>
+          <img
+            src="/placeholder.svg"
+            width="550"
+            height="550"
+            alt="Hero"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="bg-muted py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="space-y-4 text-center">
+          <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Portfolio</div>
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Explore Our Roblox Masterpieces</h2>
+          <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Discover the captivating Roblox games crafted by our talented team at Ruthx Studios.
+          </p>
+        </div>
+        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <img
+            src="/placeholder.svg"
+            width="550"
+            height="310"
+            alt="Portfolio Item"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+          />
+          <div class="flex flex-col justify-center space-y-4">
+            <h3 class="text-2xl font-bold">Escape the Haunted Mansion</h3>
+            <p class="text-muted-foreground">
+              Experience the thrill of navigating through a spooky haunted mansion, solving puzzles and evading
+              supernatural threats.
+            </p>
+            <a
+              class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              href="#"
+            >
+              Play Now
+            </a>
+          </div>
+        </div>
+        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+          <img
+            src="/placeholder.svg"
+            width="550"
+            height="310"
+            alt="Portfolio Item"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+          />
+          <div class="flex flex-col justify-center space-y-4">
+            <h3 class="text-2xl font-bold">Tycoon Tycoon</h3>
+            <p class="text-muted-foreground">
+              Build your own thriving tycoon empire, expand your business, and compete with other players to become
+              the ultimate tycoon.
+            </p>
+            <a
+              class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              href="#"
+            >
+              Play Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="bg-background py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+          <img
+            src="/placeholder.svg"
+            width="550"
+            height="550"
+            alt="About"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+          />
+          <div class="space-y-4">
+            <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Ruthx Studios</div>
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+              Crafting Roblox Masterpieces with Passion and Expertise
+            </h2>
+            <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Ruthx Studios is a leading Roblox development studio founded by STAFN0, a seasoned game developer with
+              over a decade of experience in the industry. Our team of talented designers and engineers are
+              dedicated to creating immersive and engaging Roblox experiences that captivate players of all ages.
+            </p>
+            <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              With a focus on innovation, attention to detail, and a deep understanding of the Roblox platform, we
+              strive to push the boundaries of what's possible in the world of Roblox gaming. Our portfolio of
+              successful Roblox games is a testament to our commitment to excellence and our passion for delivering
+              unforgettable experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-muted py-12 md:py-24 lg:py-32">
+      <div class="container px-4 md:px-6">
+        <div class="space-y-4 text-center">
+          <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact Us</div>
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Let's Bring Your Roblox Vision to Life</h2>
+          <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Fill out the form below to get in touch with our team and discuss your Roblox development needs.
+          </p>
+        </div>
+        <div class="mx-auto w-full max-w-md space-y-4 pt-12">
+          <form class="grid gap-4">
+            <div class="grid gap-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+              />
             </div>
-        </nav>
-        <h1>Welcome to Ruthx Studios</h1>
-    </header>
-
-    <main>
-        <section id="store" class="page">
-            <h2>Store Section</h2>
-            <div class="payhip-embed-page" data-key="6FCZ2">
-                <!-- Embedded Payhip product -->
-                <iframe src="https://payhip.com/b/6FCZ2" style="width: 100%; height: 600px; border: none;"></iframe>
+            <div class="grid gap-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+              />
             </div>
-        </section>
-
-        <section id="info" class="page" style="display:none;">
-            <h2>Info</h2>
-            <p>This is a fake info section about someone called STAFN0.</p>
-            <p>Contact me on Discord: <a href="https://discord.gg/pedbmYpZwz">Join Discord</a></p>
-        </section>
-
-        <section id="contact" class="page" style="display:none;">
-            <h2>Contact</h2>
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
-            <p>Discord: @Xpu.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Ruthx Studios. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <div class="grid gap-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="message"
+              >
+                Message
+              </label>
+              <textarea
+                class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="message"
+                placeholder="Tell us about your Roblox project"
+                rows="5"
+              ></textarea>
+            </div>
+            <button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary text-primary-foreground p-6 md:py-12 w-full">
+    <div class="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
+      <div class="grid gap-1">
+        <h3 class="font-semibold">Company</h3>
+        <a href="#">About Us</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+        <a href="#">News</a>
+      </div>
+      <div class="grid gap-1">
+        <h3 class="font-semibold">Services</h3>
+        <a href="#">Roblox Development</a>
+        <a href="#">Game Design</a>
+        <a href="#">Asset Creation</a>
+        <a href="#">Consulting</a>
+      </div>
+      <div class="grid gap-1">
+        <h3 class="font-semibold">Portfolio</h3>
+        <a href="#">Featured Games</a>
+        <a href="#">Game Showcase</a>
+        <a href="#">Client Projects</a>
+      </div>
+      <div class="grid gap-1">
+        <h3 class="font-semibold">Legal</h3>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div class="grid gap-1">
+        <h3 class="font-semibold">Contact</h3>
+        <a href="#">Support</a>
+        <a href="#">Sales</a>
+        <a href="#">Partnerships</a>
+      </div>
+    </div>
+  </footer>
+</div>
