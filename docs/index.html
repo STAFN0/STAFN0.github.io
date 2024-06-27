@@ -10,29 +10,47 @@
     <header>
         <div class="container">
             <h1>Roblox Developer Store</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    Get Started
+                    <img src="arrow.png" alt="Dropdown Arrow">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#profile">Profile</a>
+                    <a href="#store">Store</a>
+                    <a href="#contact">Contact/Info</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section id="profile" class="profile">
         <div class="container">
-            <h2>Welcome to our Store!</h2>
-            <p>Discover amazing Roblox assets and scripts.</p>
+            <h2>Profile</h2>
+            <div class="profile-items">
+                <!-- Placeholder for profile pictures and descriptions -->
+            </div>
         </div>
     </section>
 
-    <section class="products">
+    <section id="store" class="store">
         <div class="container">
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-                <!-- Product cards dynamically populated -->
+            <h2>Store</h2>
+            <div class="store-buttons">
+                <a href="#products">For My Products</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#services">Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact/Info</h2>
+            <div class="contact-info">
+                <p>Discord Server: <a href="discord link">Link</a></p>
+                <p>Roblox Username: @xpu</p>
+                <p>Contact via Gmail: <a href="mailto:your-email@gmail.com">Your Email</a></p>
             </div>
         </div>
     </section>
