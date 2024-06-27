@@ -1,20 +1,41 @@
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+// GSAP animation library is required
+gsap.registerPlugin(TweenMax);
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+// Initial state
+let dropdownVisible = false;
+
+// Get elements
+const getStartedBtn = document.getElementById('getStartedBtn');
+const dropdown = document.getElementById('dropdown');
+const arrow = document.getElementById('arrow');
+
+// Toggle dropdown visibility and animate arrow
+getStartedBtn.addEventListener('click', function() {
+    dropdown.style.display = 'block';
+    arrow.style.display = 'block';
+
+    // Animate arrow to point at dropdown
+    TweenMax.to(arrow, 0.5, { opacity: 1, x: dropdown.offsetLeft - arrow.offsetWidth / 2, y: dropdown.offsetTop - arrow.offsetHeight / 2 });
+});
+
+// Click on dropdown item
+dropdown.addEventListener('click', function() {
+    dropdown.style.display = 'none';
+    arrow.style.display = 'none';
+    getStartedBtn.style.display = 'none'; // Hide the Get Started button
+
+    // Implement logic to navigate to specific sections
+    // Example: scrollToSection('#profile');
+});
+
+// Function to scroll to specific section
+function scrollToSection(sectionId) {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: sectionId,
+            offsetY: 100 // Adjust this value as needed
+        },
+        ease: "power2.inOut"
     });
-});
-
-// Dropdown animation
-const dropdownBtn = document.querySelector('.dropdown-btn');
-const dropdownContent = document.querySelector('.dropdown-content');
-const dropdownArrow = document.querySelector('.dropdown-btn img');
-
-dropdownBtn.addEventListener('click', function() {
-    dropdownContent.classList.toggle('show');
-    dropdownArrow.classList.toggle('rotate');
-});
+}
