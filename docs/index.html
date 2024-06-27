@@ -1,11 +1,6 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/guHIaS2uDnu
--->
-
-<div class="flex flex-col min-h-[100dvh]">
-  <header class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
-    <a class="flex items-center gap-2" href="#">
+<div class="flex flex-col min-h-screen">
+  <header class="bg-primary text-primary-foreground py-4 px-6 md:px-12 flex items-center justify-between">
+    <a class="flex items-center gap-2 font-bold text-xl" href="#">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -16,279 +11,312 @@
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="w-6 h-6"
+        class="h-6 w-6"
       >
-        <line x1="6" x2="10" y1="12" y2="12"></line>
-        <line x1="8" x2="8" y1="10" y2="14"></line>
-        <line x1="15" x2="15.01" y1="13" y2="13"></line>
-        <line x1="18" x2="18.01" y1="11" y2="11"></line>
-        <rect width="20" height="12" x="2" y="6" rx="2"></rect>
+        <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+        <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+        <path d="M12 3v6"></path>
       </svg>
-      <span class="text-xl font-bold">Ruthx Studios</span>
+      <span>Stafn0 Store</span>
     </a>
     <nav class="hidden md:flex items-center gap-6">
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Home
+      <a class="hover:underline" href="#">
+        Featured
       </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Portfolio
+      <a class="hover:underline" href="#">
+        Accessories
       </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+      <a class="hover:underline" href="#">
+        Clothing
+      </a>
+      <a class="hover:underline" href="#">
+        Collectibles
+      </a>
+      <a class="hover:underline" href="#">
         About
       </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Contact
-      </a>
-      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
-        Store
-      </a>
     </nav>
-    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="w-6 h-6"
-      >
-        <line x1="4" x2="20" y1="12" y2="12"></line>
-        <line x1="4" x2="20" y1="6" y2="6"></line>
-        <line x1="4" x2="20" y1="18" y2="18"></line>
-      </svg>
-      <span class="sr-only">Toggle navigation</span>
-    </button>
+    <div class="flex items-center gap-4">
+      <button class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 hidden md:inline-flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-4 w-4 mr-2"
+        >
+          <circle cx="8" cy="21" r="1"></circle>
+          <circle cx="19" cy="21" r="1"></circle>
+          <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+        </svg>
+        Cart
+      </button>
+      <button class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 hidden md:inline-flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-4 w-4 mr-2"
+        >
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        Login
+      </button>
+      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-5 w-5"
+        >
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+    </div>
   </header>
   <main class="flex-1">
-    <section class="bg-primary py-12 md:py-24 lg:py-32">
-      <div class="container px-4 md:px-6">
-        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-          <div class="space-y-4">
-            <h1 class="text-4xl font-bold tracking-tighter text-primary-foreground sm:text-5xl xl:text-6xl">
-              Unleash Your Roblox Potential with Ruthx Studios
-            </h1>
-            <p class="text-primary-foreground/80 md:text-xl">
-              Ruthx Studios is a leading Roblox development studio, crafting immersive and engaging games that
-              captivate players of all ages.
-            </p>
-            <div class="flex flex-col gap-2 min-[400px]:flex-row">
-              <a
-                class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                href="#"
-              >
-                View Portfolio
-              </a>
-              <a
-                class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                href="#"
-              >
-                Contact Us
-              </a>
-              <a
-                class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                href="#"
-              >
-                Store
-              </a>
-            </div>
-          </div>
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="550"
-            alt="Hero"
-            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-          />
+    <section class="bg-[url('/placeholder.svg')] bg-cover bg-center py-24 md:py-32 lg:py-40 text-center">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
+          Welcome to Stafn0's Store
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl text-primary-foreground mb-8">
+          Discover the latest Roblox creations from a top developer.
+        </p>
+        <div class="flex justify-center gap-4">
+          <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8">
+            Shop Now
+          </button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8">
+            Learn More
+          </button>
         </div>
       </div>
     </section>
-    <section id="portfolio" class="bg-muted py-12 md:py-24 lg:py-32">
-      <div class="container px-4 md:px-6">
-        <div class="space-y-4 text-center">
-          <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Portfolio</div>
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Explore Our Roblox Masterpieces</h2>
-          <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Discover the captivating Roblox games crafted by our talented team at Ruthx Studios.
-          </p>
-        </div>
-        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="310"
-            alt="Portfolio Item"
-            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-          />
-          <div class="flex flex-col justify-center space-y-4">
-            <h3 class="text-2xl font-bold">Escape the Haunted Mansion</h3>
-            <p class="text-muted-foreground">
-              Experience the thrill of navigating through a spooky haunted mansion, solving puzzles and evading
-              supernatural threats.
-            </p>
-            <a
-              class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              href="#"
-            >
-              Play Now
+    <section class="py-12 md:py-16 lg:py-20">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Featured Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div class="bg-background rounded-lg overflow-hidden shadow-lg">
+            <a class="block" href="#">
+              <img
+                src="/placeholder.svg"
+                alt="Product 1"
+                width="400"
+                height="300"
+                class="w-full h-64 object-cover"
+                style="aspect-ratio:400/300;object-fit:cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Roblox Backpack</h3>
+                <p class="text-muted-foreground mb-4">A stylish and functional Roblox-themed backpack.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-primary font-bold text-lg">$9.99</span>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="bg-background rounded-lg overflow-hidden shadow-lg">
+            <a class="block" href="#">
+              <img
+                src="/placeholder.svg"
+                alt="Product 2"
+                width="400"
+                height="300"
+                class="w-full h-64 object-cover"
+                style="aspect-ratio:400/300;object-fit:cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Roblox T-Shirt</h3>
+                <p class="text-muted-foreground mb-4">A comfortable and stylish Roblox-themed t-shirt.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-primary font-bold text-lg">$14.99</span>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="bg-background rounded-lg overflow-hidden shadow-lg">
+            <a class="block" href="#">
+              <img
+                src="/placeholder.svg"
+                alt="Product 3"
+                width="400"
+                height="300"
+                class="w-full h-64 object-cover"
+                style="aspect-ratio:400/300;object-fit:cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Roblox Figurine</h3>
+                <p class="text-muted-foreground mb-4">A detailed and collectible Roblox figurine.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-primary font-bold text-lg">$19.99</span>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="bg-background rounded-lg overflow-hidden shadow-lg">
+            <a class="block" href="#">
+              <img
+                src="/placeholder.svg"
+                alt="Product 4"
+                width="400"
+                height="300"
+                class="w-full h-64 object-cover"
+                style="aspect-ratio:400/300;object-fit:cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Roblox Mug</h3>
+                <p class="text-muted-foreground mb-4">A high-quality Roblox-themed mug for your daily coffee.</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-primary font-bold text-lg">$7.99</span>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="310"
-            alt="Portfolio Item"
-            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-          />
-          <div class="flex flex-col justify-center space-y-4">
-            <h3 class="text-2xl font-bold">Tycoon Tycoon</h3>
-            <p class="text-muted-foreground">
-              Build your own thriving tycoon empire, expand your business, and compete with other players to become
-              the ultimate tycoon.
-            </p>
-            <a
-              class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              href="#"
-            >
-              Play Now
-            </a>
-          </div>
+      </div>
+    </section>
+    <section class="bg-muted py-12 md:py-16 lg:py-20">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Shop by Category</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <a class="bg-background rounded-lg overflow-hidden shadow-lg" href="#">
+            <img
+              src="/placeholder.svg"
+              alt="Accessories"
+              width="400"
+              height="300"
+              class="w-full h-48 object-cover"
+              style="aspect-ratio:400/300;object-fit:cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Accessories</h3>
+              <p class="text-muted-foreground">Explore our collection of Roblox-themed accessories.</p>
+            </div>
+          </a>
+          <a class="bg-background rounded-lg overflow-hidden shadow-lg" href="#">
+            <img
+              src="/placeholder.svg"
+              alt="Clothing"
+              width="400"
+              height="300"
+              class="w-full h-48 object-cover"
+              style="aspect-ratio:400/300;object-fit:cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Clothing</h3>
+              <p class="text-muted-foreground">Browse our selection of Roblox-inspired apparel.</p>
+            </div>
+          </a>
+          <a class="bg-background rounded-lg overflow-hidden shadow-lg" href="#">
+            <img
+              src="/placeholder.svg"
+              alt="Collectibles"
+              width="400"
+              height="300"
+              class="w-full h-48 object-cover"
+              style="aspect-ratio:400/300;object-fit:cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Collectibles</h3>
+              <p class="text-muted-foreground">Discover our exclusive Roblox collectibles.</p>
+            </div>
+          </a>
+          <a class="bg-background rounded-lg overflow-hidden shadow-lg" href="#">
+            <img
+              src="/placeholder.svg"
+              alt="Home Decor"
+              width="400"
+              height="300"
+              class="w-full h-48 object-cover"
+              style="aspect-ratio:400/300;object-fit:cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Home Decor</h3>
+              <p class="text-muted-foreground">Bring the Roblox experience into your home.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
-    <section id="about" class="bg-background py-12 md:py-24 lg:py-32">
-      <div class="container px-4 md:px-6">
-        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="550"
-            alt="About"
-            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-          />
-          <div class="space-y-4">
-            <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Ruthx Studios</div>
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Crafting Roblox Masterpieces with Passion and Expertise
-            </h2>
-            <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Ruthx Studios is a leading Roblox development studio founded by STAFN0, a seasoned game developer with
-              over a decade of experience in the industry. Our team of talented designers and engineers are
-              dedicated to creating immersive and engaging Roblox experiences that captivate players of all ages.
-            </p>
-            <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              With a focus on innovation, attention to detail, and a deep understanding of the Roblox platform, we
-              strive to push the boundaries of what's possible in the world of Roblox gaming. Our portfolio of
-              successful Roblox games is a testament to our commitment to excellence and our passion for delivering
-              unforgettable experiences.
-            </p>
+    <section class="py-12 md:py-16 lg:py-20">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">About Stafn0</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <img
+              src="/placeholder.svg"
+              alt="Stafn0"
+              width="600"
+              height="400"
+              class="w-full h-64 md:h-auto object-cover rounded-lg"
+              style="aspect-ratio:600/400;object-fit:cover"
+            />
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="bg-muted py-12 md:py-24 lg:py-32">
-      <div class="container px-4 md:px-6">
-        <div class="space-y-4 text-center">
-          <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact Us</div>
-          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Let's Bring Your Roblox Vision to Life</h2>
-          <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Fill out the form below to get in touch with our team and discuss your Roblox development needs.
-          </p>
-        </div>
-        <div class="mx-auto w-full max-w-md space-y-4 pt-12">
-          <form class="grid gap-4">
-            <div class="grid gap-2">
-              <label
-                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="name"
-              >
-                Name
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-              />
-            </div>
-            <div class="grid gap-2">
-              <label
-                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="email"
-              >
-                Email
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-              />
-            </div>
-            <div class="grid gap-2">
-              <label
-                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="message"
-              >
-                Message
-              </label>
-              <textarea
-                class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="message"
-                placeholder="Tell us about your Roblox project"
-                rows="5"
-              ></textarea>
-            </div>
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
+          <div class="prose max-w-none">
+            <p>
+              Stafn0 is a talented Roblox developer who has been creating amazing experiences and content for the
+              platform since 2015. With a passion for game design and a keen eye for detail, Stafn0 has built a
+              loyal following of fans who appreciate the high-quality and innovative nature of their creations.
+            </p>
+            <p>
+              In this online store, you'll find a curated selection of Stafn0's best-selling products, including
+              apparel, accessories, collectibles, and more. Each item is designed with the Roblox community in mind,
+              offering a unique and authentic experience for fans of the platform.
+            </p>
+            <p>Explore the store and discover the latest from Stafn0, a true master of the Roblox universe.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="bg-primary text-primary-foreground p-6 md:py-12 w-full">
-    <div class="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
-      <div class="grid gap-1">
-        <h3 class="font-semibold">Company</h3>
-        <a href="#">About Us</a>
-        <a href="#">Our Team</a>
-        <a href="#">Careers</a>
-        <a href="#">News</a>
-      </div>
-      <div class="grid gap-1">
-        <h3 class="font-semibold">Services</h3>
-        <a href="#">Roblox Development</a>
-        <a href="#">Game Design</a>
-        <a href="#">Asset Creation</a>
-        <a href="#">Consulting</a>
-      </div>
-      <div class="grid gap-1">
-        <h3 class="font-semibold">Portfolio</h3>
-        <a href="#">Featured Games</a>
-        <a href="#">Game Showcase</a>
-        <a href="#">Client Projects</a>
-      </div>
-      <div class="grid gap-1">
-        <h3 class="font-semibold">Legal</h3>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Cookie Policy</a>
-      </div>
-      <div class="grid gap-1">
-        <h3 class="font-semibold">Contact</h3>
-        <a href="#">Support</a>
-        <a href="#">Sales</a>
-        <a href="#">Partnerships</a>
-      </div>
+  <footer class="bg-primary text-primary-foreground py-6 px-4 md:px-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <p class="text-sm">© 2023 Stafn0 Store. All rights reserved.</p>
+      <nav class="flex items-center gap-4 mt-4 md:mt-0">
+        <a class="hover:underline" href="#">
+          Privacy Policy
+        </a>
+        <a class="hover:underline" href="#">
+          Terms of Service
+        </a>
+        <a class="hover:underline" href="#">
+          Contact Us
+        </a>
+      </nav>
     </div>
   </footer>
 </div>
