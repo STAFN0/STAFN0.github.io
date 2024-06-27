@@ -14,51 +14,43 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
-    background-color: #333;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    display: inline;
-    color: #fff;
-}
-
-.dropdown {
-    float: right;
-}
-
-.dropdown-btn {
+.get-started-btn {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     cursor: pointer;
-    border-radius: 20px;
-    position: relative;
-    transition: background-color 0.3s;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.dropdown-btn img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    transition: transform 0.3s;
+.get-started-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 20px;
+    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -78,50 +70,9 @@ header h1 {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.profile-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.profile-items img {
-    max-width: 200px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.store-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.store-buttons a {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 25px;
+.section {
+    padding: 100px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.store-buttons a:hover {
-    background-color: #45a049;
-}
-
-.contact-info {
-    margin-top: 20px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
 }
 
 footer {
