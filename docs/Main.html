@@ -7,24 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Roblox Developer Store</h1>
-            <div class="dropdown">
-                <button class="dropdown-btn">
-                    Get Started
-                    <img src="arrow.png" alt="Dropdown Arrow">
-                </button>
-                <div class="dropdown-content">
-                    <a href="#profile">Profile</a>
-                    <a href="#store">Store</a>
-                    <a href="#contact">Contact/Info</a>
-                </div>
-            </div>
+    <div class="container">
+        <button id="getStartedBtn" class="get-started-btn">Get Started</button>
+        <img id="arrow" src="arrow.png" alt="Dropdown Arrow">
+        <div id="dropdown" class="dropdown-content">
+            <a href="#profile">Profile</a>
+            <a href="#store">Store</a>
+            <a href="#contact">Contact/Info</a>
         </div>
-    </header>
+    </div>
 
-    <section id="profile" class="profile">
+    <section id="profile" class="profile section">
         <div class="container">
             <h2>Profile</h2>
             <div class="profile-items">
@@ -33,7 +26,7 @@
         </div>
     </section>
 
-    <section id="store" class="store">
+    <section id="store" class="store section">
         <div class="container">
             <h2>Store</h2>
             <div class="store-buttons">
@@ -44,7 +37,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section">
         <div class="container">
             <h2>Contact/Info</h2>
             <div class="contact-info">
@@ -61,6 +54,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
